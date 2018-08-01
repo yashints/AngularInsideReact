@@ -1,0 +1,11 @@
+<h1>List of recent books</h1>
+
+<div *ngFor='let book of booksList'>
+  <strong>{{book.name}}</strong>
+  <p>{{book.description}}</p>
+  <label class="container">Add to card
+    <input type="checkbox" (change)="selected(book)">
+    <span class="checkmark"></span>
+  </label>
+</div>
+
